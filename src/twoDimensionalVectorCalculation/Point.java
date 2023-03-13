@@ -66,7 +66,7 @@ public class Point {
     }
 
     /**
-     * Method to to divide by a double scalar value
+     * Method to divide by a double scalar value
      * @param scalar a double scalar value
      * @return a new Point object
      */
