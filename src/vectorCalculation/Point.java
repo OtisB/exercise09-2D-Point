@@ -28,6 +28,11 @@ public class Point {
         this.y = y;
     }
 
+    /**
+     * Method to add a Point object
+     * @param point 2D Point object with x and y double values
+     * @return a new Point object
+     */
     public Point addPoint(Point point) {
 
         double xResult = this.x + point.getX();
@@ -36,6 +41,11 @@ public class Point {
         return new Point(xResult, yResult);
     }
 
+    /**
+     * Method to subtract a Point object
+     * @param point 2D Point object with x and y double values
+     * @return a new Point object
+     */
     public Point subtractPoint(Point point) {
         double xResult = this.x - point.getX();
         double yResult = this.y - point.getY();
@@ -43,6 +53,11 @@ public class Point {
         return new Point(xResult, yResult);
     }
 
+    /**
+     * Method to to multiply with a double scalar value
+     * @param scalar a double scalar value
+     * @return a new Point object
+     */
     public Point multiplyWithScalar(double scalar) {
         double xResult = this.x * scalar;
         double yResult = this.y * scalar;
@@ -50,6 +65,11 @@ public class Point {
         return new Point(xResult, yResult);
     }
 
+    /**
+     * Method to to divide by a double scalar value
+     * @param scalar a double scalar value
+     * @return a new Point object
+     */
     public Point divideWithScalar(double scalar) {
         double xResult = this.x / scalar;
         double yResult = this.y / scalar;
