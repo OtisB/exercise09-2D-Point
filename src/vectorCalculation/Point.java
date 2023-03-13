@@ -1,31 +1,60 @@
 package vectorCalculation;
 
 public class Point {
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 
     public Point() {
     }
 
-    public Point(int x, int y) {
+    public Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
-    public void setX(int x) {
+    public void setX(double x) {
         this.x = x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
-    public void setY(int y) {
+    public void setY(double y) {
         this.y = y;
+    }
+
+    public Point addPoint(Point point) {
+
+        double xResult = this.x + point.getX();
+        double yResult = this.y + point.getY();
+
+        return new Point(xResult, yResult);
+    }
+
+    public Point subtractPoint(Point point) {
+        double xResult = this.x - point.getX();
+        double yResult = this.y - point.getY();
+
+        return new Point(xResult, yResult);
+    }
+
+    public Point multiplyWithScalar(double scalar) {
+        double xResult = this.x * scalar;
+        double yResult = this.y * scalar;
+
+        return new Point(xResult, yResult);
+    }
+
+    public Point divideWithScalar(double scalar) {
+        double xResult = this.x / scalar;
+        double yResult = this.y / scalar;
+
+        return new Point(xResult, yResult);
     }
 
     @Override
