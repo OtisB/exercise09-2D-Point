@@ -1,4 +1,4 @@
-package vectorCalculation;
+package twoDimensionalVectorCalculation;
 
 public class Point {
     private double x;

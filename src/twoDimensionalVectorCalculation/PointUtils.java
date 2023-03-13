@@ -1,4 +1,4 @@
-package vectorCalculation;
+package twoDimensionalVectorCalculation;
 
 public class PointUtils {
 
