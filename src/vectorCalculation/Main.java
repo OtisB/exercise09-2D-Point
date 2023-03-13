@@ -1,11 +1,17 @@
 package vectorCalculation;
 
+
+
 public class Main {
     public static void main(String[] args) {
 
         Point p1 = new Point(6.0, 4.0);
         Point p2 = new Point(2.0, 2.0);
 
+        Point utilPoint = PointUtils.addPoints(p1, p2);
+        System.out.println(utilPoint);
+
+        /*
         Point p3 =  p1.addPoint(p2);
         Point p4 = p1.subtractPoint(p2);
 
@@ -29,6 +35,8 @@ public class Main {
 
         System.out.println("p1 divided by 2.0");
         System.out.println(p6);
+        */
+
 
     }
 
