@@ -5,7 +5,7 @@ import twoDimensionalVectorCalculation.Point;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TriangleTest {
+class TriangleTest extends GeometricObjectTest {
     private static final double DELTA = 0.01;
 
     Triangle testTriangle = new Triangle(

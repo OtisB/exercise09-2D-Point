@@ -6,7 +6,7 @@ import twoDimensionalVectorCalculation.Point;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RectangleTest {
+class RectangleTest extends GeometricObjectTest {
 
     private static final double DELTA = 0.01;
 
