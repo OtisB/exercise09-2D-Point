@@ -32,11 +32,19 @@ public class Circle implements GeometricObject{
         this.radius = radius;
     }
 
+    /**
+     * Methode to calculate the area of a Circle object
+     * @return double value
+     */
     @Override
     public double calculateArea() {
         return Math.PI * (Math.pow(this.radius, 2));
     }
 
+    /**
+     * Methode to calculate the circumference of a Circle object
+     * @return double value
+     */
     @Override
     public double calculateCircumference() {
         return 2 * Math.PI * radius;
