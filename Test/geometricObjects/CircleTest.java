@@ -9,7 +9,7 @@ class CircleTest {
 
     private static final double DELTA = 0.01;
 
-    Circle testCircle = new Circle(new Point(4,8), 5);
+    Circle testCircle = new Circle(new Point(4.0,8.0), 5.0);
 
     @Test
     void calculateArea() {
