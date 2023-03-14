@@ -77,6 +77,17 @@ public class Point {
         return new Point(xResult, yResult);
     }
 
+    /**
+     * Method to calculate the distant to an Point object
+     * @param point 2D Point object with x and y double values
+     * @return a double value representing the distant
+     */
+    public double calculateDistance(Point point) {
+        double dx = this.x - point.x;
+        double dy = this.y - point.y;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
     @Override
     public String toString() {
         return "Point{" +

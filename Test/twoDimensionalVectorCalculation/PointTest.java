@@ -49,4 +49,11 @@ class PointTest {
         assertEquals(testPoint3.getX(), 6.0, DELTA);
         assertEquals(testPoint3.getY(), 6.0, DELTA);
     }
+
+    @Test
+    void testCalculateDistance() {
+        double calculatedDistance = testPoint1.calculateDistance(testPoint2);
+
+        assertEquals(calculatedDistance, 11.31, DELTA);
+    }
 }
